@@ -60,9 +60,9 @@ nav ul li a {
 }
 
 .personal-pic img {
-    padding: 0 80px;
-    width: 80%;
-    height: 400px;
+    padding: 0 20px;
+    width: 90%;
+    height: 500px;
     margin-top: 60px;
 }
 
@@ -72,7 +72,7 @@ nav ul li a {
     color: #222;
     justify-content: center;
     margin: 0 30px;
-    padding: 150px 20px
+    padding: 110px 20px
 }
 
 .equal-boxes .contact-info {
@@ -303,7 +303,7 @@ input, textarea {
     color: #ccc;
     justify-content: center;
     margin: 0 auto;
-    padding: 200px 20px 0 20px;
+    padding: 120px 20px 0 20px;
     position: absolute;
     top: 250px;
     left: 70px;
