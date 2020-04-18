@@ -2,6 +2,12 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Nunito', sans-serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+p {
+    font-size: 18px !important;
 }
 
 header {
@@ -65,6 +71,7 @@ nav ul li {
 
 .navigation  {
   display: flex;
+  padding-left: 0;
 }
 
 .navigation a {
@@ -108,12 +115,38 @@ nav ul li {
 }
 }
 
+@media all and (max-width: 400px) {
+    .contact-form {
+        padding: 0 !important;
+    }
 
+    .write-up {
+        display: none;
+    }
+
+
+   .navigation a {
+       padding: 10px 5px !important;
+   }
+}
 /* ****** ****** */
 @media all and (max-width: 600px) {
     .container {
         width:100%
     }
+
+    .contact-form {
+        padding: 0 !important;
+    }
+
+    .write-up {
+        display: none;
+    }
+
+
+   .navigation a {
+       padding: 10px 5px !important;
+   }
  
   .logo {
     margin: .25em 0;
@@ -205,13 +238,6 @@ nav ul li {
     flex-direction: column;
 }
 
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .contact-container {
     flex-direction: column;
 }
@@ -238,8 +264,7 @@ nav ul li {
 }
 
 .personal-pic img {
-    padding: 0 20px;
-    width: 90%;
+    width: 100%;
     height: 500px;
     margin-top: 60px;
 }
@@ -308,10 +333,10 @@ footer a {
 .bio-data {
     flex-grow: 3;
     flex: 0 0 48%;
-    padding: 60px 20px;
+    padding: 0px 20px;
 }
 
-.bio-data p {
+#bio-section p {
     text-align: justify;
 }
 
@@ -337,7 +362,7 @@ footer a {
 .image-container img{
     width: 100%;
     height: 500px;
-    margin-top: 150px;
+    margin-top: 40px;
 }
 
 .box-container {
@@ -350,9 +375,11 @@ footer a {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 30px;
-    background: rgba(255, 255, 255, 0.603);
+    background: transparent;
+    color: #fff;
     border: 1px solid #eee;
-    border-top: 2px solid #007bff;
+    border-right: 2px solid #007bff;
+    border-bottom: 2px solid #007bff;
     min-width: 220px;
     min-height: 100px;
     padding: 10px;
@@ -363,12 +390,12 @@ footer a {
 .box h5 {
     font-size: 16px;
     text-transform: uppercase;
-    color: #000; 
+    font-weight: 300; 
 }
 
 .box p {
-    font-size: 18px;
-    color: #007bff;
+    font-size: 25px;
+    font-weight: 900;
 }
 
 #contact {
@@ -619,7 +646,7 @@ input, textarea {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
